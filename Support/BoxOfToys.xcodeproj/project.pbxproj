@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7348CAE51EDF2F4C008FCE35 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348CAE41EDF2F4C008FCE35 /* RedButton.swift */; };
 		738BA93F1EBE670C005142A9 /* Containment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BA93E1EBE670C005142A9 /* Containment.swift */; };
 		738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BA9401EBE7847005142A9 /* StatefulTableViewController.swift */; };
 		738BA9461EBE7D37005142A9 /* EmptyTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9431EBE7D37005142A9 /* EmptyTableView.xib */; };
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7348CAE41EDF2F4C008FCE35 /* RedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
 		738BA93E1EBE670C005142A9 /* Containment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Containment.swift; sourceTree = "<group>"; };
 		738BA9401EBE7847005142A9 /* StatefulTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatefulTableViewController.swift; sourceTree = "<group>"; };
 		738BA9431EBE7D37005142A9 /* EmptyTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableView.xib; sourceTree = "<group>"; };
@@ -62,14 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7348CAE31EDF2F20008FCE35 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				7348CAE41EDF2F4C008FCE35 /* RedButton.swift */,
-			);
-			name = Buttons;
-			sourceTree = "<group>";
-		};
 		738BA93C1EBE66D5005142A9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +118,6 @@
 		73E61C3B1EBE5E86006C7A29 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7348CAE31EDF2F20008FCE35 /* Buttons */,
 				738BA9421EBE7D1E005142A9 /* Resources */,
 				738BA93C1EBE66D5005142A9 /* Controllers */,
 				738BA93D1EBE66EE005142A9 /* Utilities */,
@@ -253,7 +242,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
-				7348CAE51EDF2F4C008FCE35 /* RedButton.swift in Sources */,
 				738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */,
 				73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */,
 			);
