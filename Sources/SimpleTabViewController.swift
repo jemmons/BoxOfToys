@@ -3,18 +3,11 @@ import BagOfTricks
 
 
 public class SimpleTabViewController: UIViewController {
-  public var viewControllers: [UIViewController] = [] {
-    didSet {
-      guard viewControllers.isNotEmpty else {
-        selectedIndex = nil
-        return
-      }
-      selectedIndex = 0
-    }
-  }
+  private let viewControllers: [UIViewController]
+  private var selectedConstraints: [NSLayoutConstraint] = []
+
   
-  
-  public var selectedIndex: Int? {
+  public var selectedIndex: Int {
     willSet {
       removeControllers()
     }
@@ -24,7 +17,17 @@ public class SimpleTabViewController: UIViewController {
   }
   
   
-  fileprivate var selectedConstraints: [NSLayoutConstraint] = []
+  public init(children: [UIViewController]) {
+    precondition(children.isNotEmpty)
+    viewControllers = children
+    selectedIndex = 0
+    super.init(nibName: nil, bundle: nil)
+  }
+  
+  
+  public required init?(coder aDecoder: NSCoder) {
+    fatalError("unimplemented")
+  }
 }
 
 
@@ -39,17 +42,15 @@ public extension SimpleTabViewController {
 
 private extension SimpleTabViewController {
   func removeControllers() {
-    childViewControllers.forEach {
-      remove($0, constraints: selectedConstraints)
-      selectedConstraints = []
+    NSLayoutConstraint.deactivate(selectedConstraints)
+    selectedConstraints = []
+    childViewControllers.forEach { viewController in
+      extract(viewController)
     }
   }
   
   
   func addSelectedController() {
-    guard let someIndex = selectedIndex else {
-      return
-    }
-    selectedConstraints = embedFullFrame(viewControllers[someIndex])
+    selectedConstraints.append(contentsOf: embedFullFrame(viewControllers[selectedIndex]))
   }
 }

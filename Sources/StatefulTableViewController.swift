@@ -3,7 +3,7 @@ import BagOfTricks
 
 
 public class StatefulTableViewController: UIViewController {
-  fileprivate weak var tabController: SimpleTabViewController!
+  private weak var tabController: SimpleTabViewController!
   public weak var tableView: UITableView!
 }
 
@@ -17,10 +17,7 @@ public extension StatefulTableViewController {
   
   var state: State {
     get {
-      guard let index = tabController.selectedIndex else {
-        fatalError("Table has no selected index.")
-      }
-      guard let state = State(rawValue: index) else {
+      guard let state = State(rawValue: tabController.selectedIndex) else {
         fatalError("Selected index out of range of table tabs.")
       }
       return state
@@ -35,19 +32,18 @@ public extension StatefulTableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    let tableViewController = UITableViewController(style: .plain)
+    let tabViewControllers = [
+      UIViewController(nibName: "LoadingTableView", bundle: nil),
+      tableViewController,
+      UIViewController(nibName: "EmptyTableView", bundle: nil),
+      UIViewController(nibName: "ErrorTableView", bundle: nil),
+      ]
     
-    tabController = given(SimpleTabViewController()) {
+    tabController = given(SimpleTabViewController(children: tabViewControllers)) {
       embedFullFrame($0)
     }
     
-    with(UITableViewController(style: .plain)) {
-      tabController.viewControllers = [
-        UIViewController(nibName: "LoadingTableView", bundle: nil),
-        $0,
-        UIViewController(nibName: "EmptyTableView", bundle: nil),
-        UIViewController(nibName: "ErrorTableView", bundle: nil),
-      ]
-      tableView = $0.tableView
-    }
+    tableView = tableViewController.tableView
   }
 }

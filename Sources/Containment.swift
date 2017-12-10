@@ -21,10 +21,13 @@ public extension UIViewController {
     }
   }
   
-  
-  func remove(_ child: UIViewController, constraints: [NSLayoutConstraint] = []) {
+
+  /// Removes `child` from view controller containment *if* `child` is contained. Otherwise is a no-op.
+  func extract(_ child: UIViewController) {
+    guard child.parent != nil else {
+      return
+    }
     child.willMove(toParentViewController: nil)
-    NSLayoutConstraint.deactivate(constraints)
     child.view.removeFromSuperview()
     child.removeFromParentViewController()
   }
