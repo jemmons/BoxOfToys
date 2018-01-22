@@ -12,6 +12,9 @@
 		738BA9461EBE7D37005142A9 /* EmptyTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9431EBE7D37005142A9 /* EmptyTableView.xib */; };
 		738BA9471EBE7D37005142A9 /* LoadingTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9441EBE7D37005142A9 /* LoadingTableView.xib */; };
 		738BA9481EBE7D37005142A9 /* ErrorTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9451EBE7D37005142A9 /* ErrorTableView.xib */; };
+		73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39A20168C16008AED0D /* UIColor+Hex.swift */; };
+		73B8D39E20168C64008AED0D /* UIColor+HexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */; };
+		73B8D3A120168D20008AED0D /* BagOfTricks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8D3A020168D20008AED0D /* BagOfTricks.framework */; };
 		73E61C291EBE5D9E006C7A29 /* BoxOfToys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C1F1EBE5D9E006C7A29 /* BoxOfToys.framework */; };
 		73E61C2E1EBE5D9E006C7A29 /* BoxOfToysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C2D1EBE5D9E006C7A29 /* BoxOfToysTests.swift */; };
 		73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */; };
@@ -34,6 +37,9 @@
 		738BA9431EBE7D37005142A9 /* EmptyTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableView.xib; sourceTree = "<group>"; };
 		738BA9441EBE7D37005142A9 /* LoadingTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableView.xib; sourceTree = "<group>"; };
 		738BA9451EBE7D37005142A9 /* ErrorTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorTableView.xib; sourceTree = "<group>"; };
+		73B8D39A20168C16008AED0D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexTests.swift"; sourceTree = "<group>"; };
+		73B8D3A020168D20008AED0D /* BagOfTricks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BagOfTricks.framework; path = ../Carthage/Build/iOS/BagOfTricks.framework; sourceTree = "<group>"; };
 		73E61C1F1EBE5D9E006C7A29 /* BoxOfToys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxOfToys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E61C281EBE5D9E006C7A29 /* BoxOfToysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfToysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E61C2D1EBE5D9E006C7A29 /* BoxOfToysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfToysTests.swift; sourceTree = "<group>"; };
@@ -46,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B8D3A120168D20008AED0D /* BagOfTricks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,31 +67,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		738BA93C1EBE66D5005142A9 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */,
-				738BA9401EBE7847005142A9 /* StatefulTableViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		738BA93D1EBE66EE005142A9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				738BA93E1EBE670C005142A9 /* Containment.swift */,
 			);
-			name = Utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		738BA9421EBE7D1E005142A9 /* Resources */ = {
+		73B8D39620168BC8008AED0D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */,
+				738BA9401EBE7847005142A9 /* StatefulTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73B8D39720168BE4008AED0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				738BA9431EBE7D37005142A9 /* EmptyTableView.xib */,
 				738BA9441EBE7D37005142A9 /* LoadingTableView.xib */,
 				738BA9451EBE7D37005142A9 /* ErrorTableView.xib */,
 			);
-			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73B8D39820168C00008AED0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73B8D39A20168C16008AED0D /* UIColor+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		73B8D39F20168D20008AED0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73B8D3A020168D20008AED0D /* BagOfTricks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		73E61C151EBE5D9E006C7A29 = {
@@ -94,6 +117,7 @@
 				73E61C3B1EBE5E86006C7A29 /* Sources */,
 				73E61C2C1EBE5D9E006C7A29 /* Tests */,
 				73E61C201EBE5D9E006C7A29 /* Products */,
+				73B8D39F20168D20008AED0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				73E61C2D1EBE5D9E006C7A29 /* BoxOfToysTests.swift */,
+				73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -118,8 +143,9 @@
 		73E61C3B1EBE5E86006C7A29 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				738BA9421EBE7D1E005142A9 /* Resources */,
-				738BA93C1EBE66D5005142A9 /* Controllers */,
+				73B8D39820168C00008AED0D /* Extensions */,
+				73B8D39720168BE4008AED0D /* Resources */,
+				73B8D39620168BC8008AED0D /* Controllers */,
 				738BA93D1EBE66EE005142A9 /* Utilities */,
 			);
 			name = Sources;
@@ -147,6 +173,7 @@
 				73E61C1B1EBE5D9E006C7A29 /* Frameworks */,
 				73E61C1C1EBE5D9E006C7A29 /* Headers */,
 				73E61C1D1EBE5D9E006C7A29 /* Resources */,
+				73B8D3A220168D2A008AED0D /* Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -236,12 +263,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73B8D3A220168D2A008AED0D /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/BagOfTricks.framework",
+			);
+			name = "Carthage Script";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BagOfTricks.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73E61C1A1EBE5D9E006C7A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
+				73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */,
 				738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */,
 				73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */,
 			);
@@ -252,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E61C2E1EBE5D9E006C7A29 /* BoxOfToysTests.swift in Sources */,
+				73B8D39E20168C64008AED0D /* UIColor+HexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +443,7 @@
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BoxOfToys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,6 +469,7 @@
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BoxOfToys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
