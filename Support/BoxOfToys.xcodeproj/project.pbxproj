@@ -12,6 +12,12 @@
 		738BA9461EBE7D37005142A9 /* EmptyTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9431EBE7D37005142A9 /* EmptyTableView.xib */; };
 		738BA9471EBE7D37005142A9 /* LoadingTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9441EBE7D37005142A9 /* LoadingTableView.xib */; };
 		738BA9481EBE7D37005142A9 /* ErrorTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9451EBE7D37005142A9 /* ErrorTableView.xib */; };
+		73B213182024C73300792C42 /* AbstractBusy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213172024C73300792C42 /* AbstractBusy.swift */; };
+		73B2131B2024CD1E00792C42 /* BusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131A2024CD1E00792C42 /* BusyViewController.swift */; };
+		73B2131D2024CD5900792C42 /* Busy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131C2024CD5800792C42 /* Busy.swift */; };
+		73B2131F2024CDA300792C42 /* BlurBusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */; };
+		73B213212024D00800792C42 /* DarkBlurBusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */; };
+		73B213232024D30A00792C42 /* DarkBusy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213222024D30A00792C42 /* DarkBusy.swift */; };
 		73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39A20168C16008AED0D /* UIColor+Hex.swift */; };
 		73B8D39E20168C64008AED0D /* UIColor+HexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */; };
 		73B8D3A120168D20008AED0D /* BagOfTricks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8D3A020168D20008AED0D /* BagOfTricks.framework */; };
@@ -37,6 +43,12 @@
 		738BA9431EBE7D37005142A9 /* EmptyTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableView.xib; sourceTree = "<group>"; };
 		738BA9441EBE7D37005142A9 /* LoadingTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableView.xib; sourceTree = "<group>"; };
 		738BA9451EBE7D37005142A9 /* ErrorTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorTableView.xib; sourceTree = "<group>"; };
+		73B213172024C73300792C42 /* AbstractBusy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBusy.swift; sourceTree = "<group>"; };
+		73B2131A2024CD1E00792C42 /* BusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyViewController.swift; sourceTree = "<group>"; };
+		73B2131C2024CD5800792C42 /* Busy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Busy.swift; sourceTree = "<group>"; };
+		73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurBusyViewController.swift; sourceTree = "<group>"; };
+		73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBlurBusyViewController.swift; sourceTree = "<group>"; };
+		73B213222024D30A00792C42 /* DarkBusy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBusy.swift; sourceTree = "<group>"; };
 		73B8D39A20168C16008AED0D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexTests.swift"; sourceTree = "<group>"; };
 		73B8D3A020168D20008AED0D /* BagOfTricks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BagOfTricks.framework; path = ../Carthage/Build/iOS/BagOfTricks.framework; sourceTree = "<group>"; };
@@ -73,6 +85,27 @@
 				738BA93E1EBE670C005142A9 /* Containment.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		73B213162024C72100792C42 /* Mixins */ = {
+			isa = PBXGroup;
+			children = (
+				73B213192024CCCE00792C42 /* Busy */,
+			);
+			path = Mixins;
+			sourceTree = "<group>";
+		};
+		73B213192024CCCE00792C42 /* Busy */ = {
+			isa = PBXGroup;
+			children = (
+				73B213172024C73300792C42 /* AbstractBusy.swift */,
+				73B2131C2024CD5800792C42 /* Busy.swift */,
+				73B213222024D30A00792C42 /* DarkBusy.swift */,
+				73B2131A2024CD1E00792C42 /* BusyViewController.swift */,
+				73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */,
+				73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */,
+			);
+			path = Busy;
 			sourceTree = "<group>";
 		};
 		73B8D39620168BC8008AED0D /* Controllers */ = {
@@ -143,6 +176,7 @@
 		73E61C3B1EBE5E86006C7A29 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				73B213162024C72100792C42 /* Mixins */,
 				73B8D39820168C00008AED0D /* Extensions */,
 				73B8D39720168BE4008AED0D /* Resources */,
 				73B8D39620168BC8008AED0D /* Controllers */,
@@ -288,8 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
 				73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */,
+				73B2131D2024CD5900792C42 /* Busy.swift in Sources */,
+				73B213212024D00800792C42 /* DarkBlurBusyViewController.swift in Sources */,
+				73B2131F2024CDA300792C42 /* BlurBusyViewController.swift in Sources */,
+				73B213232024D30A00792C42 /* DarkBusy.swift in Sources */,
+				73B2131B2024CD1E00792C42 /* BusyViewController.swift in Sources */,
 				738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */,
 				73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */,
 			);
