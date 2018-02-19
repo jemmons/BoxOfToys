@@ -13,6 +13,8 @@
 		736DCA5A2028FFCE00689659 /* ApplicationTopPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DCA322028FCE700689659 /* ApplicationTopPresenterTests.swift */; };
 		736FB840202901330098A9BD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FB83E202901300098A9BD /* Utilities.swift */; };
 		736FB843202902DF0098A9BD /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FB841202902C40098A9BD /* UtilitiesTests.swift */; };
+		738B1BD4203B1EDD001E11B4 /* UserDefaults+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */; };
+		738B1BD8203B1F2A001E11B4 /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1BD5203B1F23001E11B4 /* UserDefaultsTests.swift */; };
 		738BA93F1EBE670C005142A9 /* Containment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BA93E1EBE670C005142A9 /* Containment.swift */; };
 		738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BA9401EBE7847005142A9 /* StatefulTableViewController.swift */; };
 		738BA9461EBE7D37005142A9 /* EmptyTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9431EBE7D37005142A9 /* EmptyTableView.xib */; };
@@ -58,6 +60,8 @@
 		736DCA542028FFC000689659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		736FB83E202901300098A9BD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		736FB841202902C40098A9BD /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
+		738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Color.swift"; sourceTree = "<group>"; };
+		738B1BD5203B1F23001E11B4 /* UserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTests.swift; sourceTree = "<group>"; };
 		738BA93E1EBE670C005142A9 /* Containment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Containment.swift; sourceTree = "<group>"; };
 		738BA9401EBE7847005142A9 /* StatefulTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatefulTableViewController.swift; sourceTree = "<group>"; };
 		738BA9431EBE7D37005142A9 /* EmptyTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableView.xib; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			children = (
 				73B8D39A20168C16008AED0D /* UIColor+Hex.swift */,
 				736DCA302028E6DB00689659 /* Application+TopPresenter.swift */,
+				738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				736DCA322028FCE700689659 /* ApplicationTopPresenterTests.swift */,
 				736FB841202902C40098A9BD /* UtilitiesTests.swift */,
 				736FB83E202901300098A9BD /* Utilities.swift */,
+				738B1BD5203B1F23001E11B4 /* UserDefaultsTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -383,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738B1BD4203B1EDD001E11B4 /* UserDefaults+Color.swift in Sources */,
 				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
 				73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */,
@@ -401,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738B1BD8203B1F2A001E11B4 /* UserDefaultsTests.swift in Sources */,
 				736DCA5A2028FFCE00689659 /* ApplicationTopPresenterTests.swift in Sources */,
 				736FB843202902DF0098A9BD /* UtilitiesTests.swift in Sources */,
 				736FB840202901330098A9BD /* Utilities.swift in Sources */,
