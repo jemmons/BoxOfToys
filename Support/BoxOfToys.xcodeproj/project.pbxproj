@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733732CE205243A200B8BA6C /* UIViewController+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733732CD205243A200B8BA6C /* UIViewController+RootViewController.swift */; };
 		7364C75820474E8D00038931 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364C75720474E8D00038931 /* Alert.swift */; };
 		736DCA312028E6DB00689659 /* Application+TopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DCA302028E6DB00689659 /* Application+TopPresenter.swift */; };
 		736DCA492028FFC000689659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DCA482028FFC000689659 /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		733732CD205243A200B8BA6C /* UIViewController+RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RootViewController.swift"; sourceTree = "<group>"; };
 		7364C75720474E8D00038931 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		736DCA302028E6DB00689659 /* Application+TopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+TopPresenter.swift"; sourceTree = "<group>"; };
 		736DCA322028FCE700689659 /* ApplicationTopPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTopPresenterTests.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				73B8D39A20168C16008AED0D /* UIColor+Hex.swift */,
 				736DCA302028E6DB00689659 /* Application+TopPresenter.swift */,
 				738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */,
+				733732CD205243A200B8BA6C /* UIViewController+RootViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				738B1BD4203B1EDD001E11B4 /* UserDefaults+Color.swift in Sources */,
+				733732CE205243A200B8BA6C /* UIViewController+RootViewController.swift in Sources */,
 				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
 				73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */,
