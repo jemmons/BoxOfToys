@@ -30,13 +30,13 @@
 		73B2131F2024CDA300792C42 /* BlurBusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */; };
 		73B213212024D00800792C42 /* DarkBlurBusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */; };
 		73B213232024D30A00792C42 /* DarkBusy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213222024D30A00792C42 /* DarkBusy.swift */; };
-		73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39A20168C16008AED0D /* UIColor+Hex.swift */; };
-		73B8D39E20168C64008AED0D /* UIColor+HexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */; };
+		73B8D39E20168C64008AED0D /* UIColor+ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39C20168C57008AED0D /* UIColor+ComponentsTests.swift */; };
 		73B8D3A120168D20008AED0D /* BagOfTricks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8D3A020168D20008AED0D /* BagOfTricks.framework */; };
 		73BEF5EC205C11C40091067F /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEF5EB205C11C40091067F /* UIView+Shake.swift */; };
 		73E61C291EBE5D9E006C7A29 /* BoxOfToys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C1F1EBE5D9E006C7A29 /* BoxOfToys.framework */; };
 		73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */; };
 		73E61C3F1EBE5ED4006C7A29 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C3E1EBE5ED4006C7A29 /* Cartfile */; };
+		C1E1DAE320ED66F200DA703A /* UIColor+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1DAE220ED66F200DA703A /* UIColor+Components.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,14 +82,14 @@
 		73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurBusyViewController.swift; sourceTree = "<group>"; };
 		73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBlurBusyViewController.swift; sourceTree = "<group>"; };
 		73B213222024D30A00792C42 /* DarkBusy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBusy.swift; sourceTree = "<group>"; };
-		73B8D39A20168C16008AED0D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexTests.swift"; sourceTree = "<group>"; };
+		73B8D39C20168C57008AED0D /* UIColor+ComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ComponentsTests.swift"; sourceTree = "<group>"; };
 		73B8D3A020168D20008AED0D /* BagOfTricks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BagOfTricks.framework; path = ../Carthage/Build/iOS/BagOfTricks.framework; sourceTree = "<group>"; };
 		73BEF5EB205C11C40091067F /* UIView+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
 		73E61C1F1EBE5D9E006C7A29 /* BoxOfToys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxOfToys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E61C281EBE5D9E006C7A29 /* BoxOfToysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfToysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTabViewController.swift; sourceTree = "<group>"; };
 		73E61C3E1EBE5ED4006C7A29 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		C1E1DAE220ED66F200DA703A /* UIColor+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Components.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				733A8C59205F0F6D0028AF3C /* ProperFraction+CGFloat.swift */,
-				73B8D39A20168C16008AED0D /* UIColor+Hex.swift */,
+				C1E1DAE220ED66F200DA703A /* UIColor+Components.swift */,
 				736DCA302028E6DB00689659 /* Application+TopPresenter.swift */,
 				738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */,
 				733732CD205243A200B8BA6C /* UIViewController+RootViewController.swift */,
@@ -238,7 +238,7 @@
 		73E61C2C1EBE5D9E006C7A29 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				73B8D39C20168C57008AED0D /* UIColor+HexTests.swift */,
+				73B8D39C20168C57008AED0D /* UIColor+ComponentsTests.swift */,
 				736DCA322028FCE700689659 /* ApplicationTopPresenterTests.swift */,
 				736FB841202902C40098A9BD /* UtilitiesTests.swift */,
 				736FB83E202901300098A9BD /* Utilities.swift */,
@@ -425,7 +425,7 @@
 				733732CE205243A200B8BA6C /* UIViewController+RootViewController.swift in Sources */,
 				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
-				73B8D39B20168C16008AED0D /* UIColor+Hex.swift in Sources */,
+				C1E1DAE320ED66F200DA703A /* UIColor+Components.swift in Sources */,
 				73B2131D2024CD5900792C42 /* Busy.swift in Sources */,
 				7364C75820474E8D00038931 /* Alert.swift in Sources */,
 				73B213212024D00800792C42 /* DarkBlurBusyViewController.swift in Sources */,
@@ -448,7 +448,7 @@
 				733A8C62205F22560028AF3C /* ProperFractionCGFloatTests.swift in Sources */,
 				736FB843202902DF0098A9BD /* UtilitiesTests.swift in Sources */,
 				736FB840202901330098A9BD /* Utilities.swift in Sources */,
-				73B8D39E20168C64008AED0D /* UIColor+HexTests.swift in Sources */,
+				73B8D39E20168C64008AED0D /* UIColor+ComponentsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = BoxOfToysTestHost/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.tests.BoxOfToysTestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,7 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = BoxOfToysTestHost/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.tests.BoxOfToysTestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -565,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -619,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
