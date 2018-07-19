@@ -119,13 +119,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		733A8C58205F0F190028AF3C /* Types */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Types;
-			sourceTree = "<group>";
-		};
 		7364C75620474E6E00038931 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +245,6 @@
 		73E61C3B1EBE5E86006C7A29 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				733A8C58205F0F190028AF3C /* Types */,
 				7364C75620474E6E00038931 /* Controls */,
 				73B213162024C72100792C42 /* Mixins */,
 				73B8D39820168C00008AED0D /* Extensions */,
