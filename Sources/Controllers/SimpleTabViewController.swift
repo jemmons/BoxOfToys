@@ -4,6 +4,7 @@ import BagOfTricks
 
 public class SimpleTabViewController: UIViewController {
   private let viewControllers: [UIViewController]
+  private let usesLayoutGuide: Bool
   private var selectedConstraints: [NSLayoutConstraint] = []
 
   
@@ -17,10 +18,11 @@ public class SimpleTabViewController: UIViewController {
   }
   
   
-  public init(children: [UIViewController]) {
+  public init(children: [UIViewController], usesLayoutGuide: Bool = true) {
     precondition(children.isNotEmpty)
     viewControllers = children
     selectedIndex = 0
+    self.usesLayoutGuide = usesLayoutGuide
     super.init(nibName: nil, bundle: nil)
   }
   
@@ -51,6 +53,6 @@ private extension SimpleTabViewController {
   
   
   func addSelectedController() {
-    selectedConstraints.append(contentsOf: embedFullFrame(viewControllers[selectedIndex]))
+    selectedConstraints.append(contentsOf: embedFullFrame(viewControllers[selectedIndex], usesLayoutGuide: usesLayoutGuide))
   }
 }

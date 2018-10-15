@@ -15,8 +15,8 @@ public extension UIViewController {
   }
   
   
-  @discardableResult func embedFullFrame(_ child: UIViewController) -> [NSLayoutConstraint] {
-    return given(Helper.makeFullFrameConstraints(from: child, to: self)) {
+  @discardableResult func embedFullFrame(_ child: UIViewController, usesLayoutGuide: Bool = true) -> [NSLayoutConstraint] {
+    return given(Helper.makeFullFrameConstraints(from: child, to: self, usesLayoutGuide: usesLayoutGuide)) {
       embed(child, constraints: $0)
     }
   }
@@ -36,12 +36,35 @@ public extension UIViewController {
 
 
 private enum Helper {
-  static func makeFullFrameConstraints(from child: UIViewController, to parent: UIViewController) -> [NSLayoutConstraint] {
-    return [
-      child.view.topAnchor.constraint(equalTo: parent.topLayoutGuide.bottomAnchor),
-      child.view.bottomAnchor.constraint(equalTo: parent.bottomLayoutGuide.topAnchor),
-      child.view.leadingAnchor.constraint(equalTo: parent.view.leadingAnchor),
-      child.view.trailingAnchor.constraint(equalTo: parent.view.trailingAnchor),
-    ]
+  static func makeFullFrameConstraints(from child: UIViewController, to parent: UIViewController, usesLayoutGuide: Bool) -> [NSLayoutConstraint] {
+    let constraints: [NSLayoutConstraint]
+    switch usesLayoutGuide {
+    case false:
+      constraints = [
+        child.view.topAnchor.constraint(equalTo: parent.view.topAnchor),
+        child.view.bottomAnchor.constraint(equalTo: parent.view.bottomAnchor),
+        child.view.leadingAnchor.constraint(equalTo: parent.view.leadingAnchor),
+        child.view.trailingAnchor.constraint(equalTo: parent.view.trailingAnchor),
+      ]
+      
+    case true:
+      if #available(iOS 11, *) {
+        constraints = [
+          child.view.topAnchor.constraint(equalTo: parent.view.safeAreaLayoutGuide.topAnchor),
+          child.view.bottomAnchor.constraint(equalTo: parent.view.safeAreaLayoutGuide.bottomAnchor),
+          child.view.leadingAnchor.constraint(equalTo: parent.view.leadingAnchor),
+          child.view.trailingAnchor.constraint(equalTo: parent.view.trailingAnchor),
+        ]
+        
+      } else {
+        constraints = [
+          child.view.topAnchor.constraint(equalTo: parent.topLayoutGuide.bottomAnchor),
+          child.view.bottomAnchor.constraint(equalTo: parent.bottomLayoutGuide.topAnchor),
+          child.view.leadingAnchor.constraint(equalTo: parent.view.leadingAnchor),
+          child.view.trailingAnchor.constraint(equalTo: parent.view.trailingAnchor),
+        ]
+      }
+    }
+    return constraints
   }
 }
