@@ -59,7 +59,7 @@ public extension AbstractBusy where Self: UIViewController {
   
   
   private func findBusyController() -> ViewController? {
-    return childViewControllers.first { $0 is ViewController } as? ViewController
+    return children.first { $0 is ViewController } as? ViewController
   }
   
   

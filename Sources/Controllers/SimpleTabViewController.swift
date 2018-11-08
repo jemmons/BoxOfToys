@@ -46,7 +46,7 @@ private extension SimpleTabViewController {
   func removeControllers() {
     NSLayoutConstraint.deactivate(selectedConstraints)
     selectedConstraints = []
-    childViewControllers.forEach { viewController in
+    children.forEach { viewController in
       extract(viewController)
     }
   }

@@ -16,7 +16,7 @@ public class DarkBlurBusyViewController: BusyViewController {
         $0.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
     }
     
-    with(UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)) {
+    with(UIActivityIndicatorView(style: .whiteLarge)) {
       $0.color = .white
       $0.translatesAutoresizingMaskIntoConstraints = false
       view.addSubview($0)

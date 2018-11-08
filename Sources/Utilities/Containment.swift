@@ -5,13 +5,13 @@ import BagOfTricks
 
 public extension UIViewController {
   func embed(_ child: UIViewController, constraints: [NSLayoutConstraint] = []) {
-    addChildViewController(child)
+    addChild(child)
     view.addSubview(child.view)
     if constraints.isNotEmpty {
       child.view.translatesAutoresizingMaskIntoConstraints = false
       NSLayoutConstraint.activate(constraints)
     }
-    child.didMove(toParentViewController: self)
+    child.didMove(toParent: self)
   }
   
   
@@ -27,9 +27,9 @@ public extension UIViewController {
     guard child.parent != nil else {
       return
     }
-    child.willMove(toParentViewController: nil)
+    child.willMove(toParent: nil)
     child.view.removeFromSuperview()
-    child.removeFromParentViewController()
+    child.removeFromParent()
   }
 }
 
