@@ -36,6 +36,8 @@
 		73E61C291EBE5D9E006C7A29 /* BoxOfToys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C1F1EBE5D9E006C7A29 /* BoxOfToys.framework */; };
 		73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */; };
 		73E61C3F1EBE5ED4006C7A29 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C3E1EBE5ED4006C7A29 /* Cartfile */; };
+		C150931F21BF2E2200D619A3 /* UIView+Negatives.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */; };
+		C150932321BF2E8B00D619A3 /* UIVIewNegativesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */; };
 		C1B090462194E57100C87B61 /* HorizontalHairline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B090452194E57100C87B61 /* HorizontalHairline.swift */; };
 		C1B0904A2194ECF600C87B61 /* Popoverify.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B090492194ECF600C87B61 /* Popoverify.swift */; };
 		C1E1DAE320ED66F200DA703A /* UIColor+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1DAE220ED66F200DA703A /* UIColor+Components.swift */; };
@@ -91,6 +93,8 @@
 		73E61C281EBE5D9E006C7A29 /* BoxOfToysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfToysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTabViewController.swift; sourceTree = "<group>"; };
 		73E61C3E1EBE5ED4006C7A29 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Negatives.swift"; sourceTree = "<group>"; };
+		C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewNegativesTests.swift; sourceTree = "<group>"; };
 		C1B090452194E57100C87B61 /* HorizontalHairline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalHairline.swift; sourceTree = "<group>"; };
 		C1B090492194ECF600C87B61 /* Popoverify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popoverify.swift; sourceTree = "<group>"; };
 		C1E1DAE220ED66F200DA703A /* UIColor+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Components.swift"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */,
 				733732CD205243A200B8BA6C /* UIViewController+RootViewController.swift */,
 				73BEF5EB205C11C40091067F /* UIView+Shake.swift */,
+				C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				736FB83E202901300098A9BD /* Utilities.swift */,
 				738B1BD5203B1F23001E11B4 /* UserDefaultsTests.swift */,
 				733A8C60205F22450028AF3C /* ProperFractionCGFloatTests.swift */,
+				C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -441,6 +447,7 @@
 				73B213232024D30A00792C42 /* DarkBusy.swift in Sources */,
 				C1B0904A2194ECF600C87B61 /* Popoverify.swift in Sources */,
 				73B2131B2024CD1E00792C42 /* BusyViewController.swift in Sources */,
+				C150931F21BF2E2200D619A3 /* UIView+Negatives.swift in Sources */,
 				733A8C5A205F0F6D0028AF3C /* ProperFraction+CGFloat.swift in Sources */,
 				738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */,
 				73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */,
@@ -455,6 +462,7 @@
 				738B1BD8203B1F2A001E11B4 /* UserDefaultsTests.swift in Sources */,
 				736DCA5A2028FFCE00689659 /* ApplicationTopPresenterTests.swift in Sources */,
 				733A8C62205F22560028AF3C /* ProperFractionCGFloatTests.swift in Sources */,
+				C150932321BF2E8B00D619A3 /* UIVIewNegativesTests.swift in Sources */,
 				736FB843202902DF0098A9BD /* UtilitiesTests.swift in Sources */,
 				736FB840202901330098A9BD /* Utilities.swift in Sources */,
 				73B8D39E20168C64008AED0D /* UIColor+ComponentsTests.swift in Sources */,
