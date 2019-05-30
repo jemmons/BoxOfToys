@@ -41,6 +41,8 @@
 		C147013E229D99E3009B1EE0 /* UIFont+CapHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147013D229D99E3009B1EE0 /* UIFont+CapHeight.swift */; };
 		C1470141229D9A93009B1EE0 /* UIFontBoldItalicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147013F229D9A89009B1EE0 /* UIFontBoldItalicTests.swift */; };
 		C1470143229D9CA2009B1EE0 /* UIFontCapHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1470142229D9CA2009B1EE0 /* UIFontCapHeightTests.swift */; };
+		C1470145229DBE5A009B1EE0 /* UIBezierPath+Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1470144229DBE5A009B1EE0 /* UIBezierPath+Shapes.swift */; };
+		C1470147229DD50F009B1EE0 /* UIBezierPathShapesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1470146229DD50F009B1EE0 /* UIBezierPathShapesTests.swift */; };
 		C150931F21BF2E2200D619A3 /* UIView+Negatives.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */; };
 		C150932321BF2E8B00D619A3 /* UIVIewNegativesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */; };
 		C1B090462194E57100C87B61 /* HorizontalHairline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B090452194E57100C87B61 /* HorizontalHairline.swift */; };
@@ -103,6 +105,8 @@
 		C147013D229D99E3009B1EE0 /* UIFont+CapHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CapHeight.swift"; sourceTree = "<group>"; };
 		C147013F229D9A89009B1EE0 /* UIFontBoldItalicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontBoldItalicTests.swift; sourceTree = "<group>"; };
 		C1470142229D9CA2009B1EE0 /* UIFontCapHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontCapHeightTests.swift; sourceTree = "<group>"; };
+		C1470144229DBE5A009B1EE0 /* UIBezierPath+Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Shapes.swift"; sourceTree = "<group>"; };
+		C1470146229DD50F009B1EE0 /* UIBezierPathShapesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathShapesTests.swift; sourceTree = "<group>"; };
 		C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Negatives.swift"; sourceTree = "<group>"; };
 		C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewNegativesTests.swift; sourceTree = "<group>"; };
 		C1B090452194E57100C87B61 /* HorizontalHairline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalHairline.swift; sourceTree = "<group>"; };
@@ -261,6 +265,7 @@
 				C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */,
 				C147013F229D9A89009B1EE0 /* UIFontBoldItalicTests.swift */,
 				C1470142229D9CA2009B1EE0 /* UIFontCapHeightTests.swift */,
+				C1470146229DD50F009B1EE0 /* UIBezierPathShapesTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -468,6 +473,7 @@
 			files = (
 				73BEF5EC205C11C40091067F /* UIView+Shake.swift in Sources */,
 				738B1BD4203B1EDD001E11B4 /* UserDefaults+Color.swift in Sources */,
+				C1470145229DBE5A009B1EE0 /* UIBezierPath+Shapes.swift in Sources */,
 				733732CE205243A200B8BA6C /* UIViewController+RootViewController.swift in Sources */,
 				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
 				C1470138229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift in Sources */,
@@ -496,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				738B1BD8203B1F2A001E11B4 /* UserDefaultsTests.swift in Sources */,
+				C1470147229DD50F009B1EE0 /* UIBezierPathShapesTests.swift in Sources */,
 				736DCA5A2028FFCE00689659 /* ApplicationTopPresenterTests.swift in Sources */,
 				733A8C62205F22560028AF3C /* ProperFractionCGFloatTests.swift in Sources */,
 				C150932321BF2E8B00D619A3 /* UIVIewNegativesTests.swift in Sources */,
