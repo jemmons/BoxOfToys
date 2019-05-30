@@ -36,6 +36,9 @@
 		73E61C291EBE5D9E006C7A29 /* BoxOfToys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C1F1EBE5D9E006C7A29 /* BoxOfToys.framework */; };
 		73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */; };
 		73E61C3F1EBE5ED4006C7A29 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C3E1EBE5ED4006C7A29 /* Cartfile */; };
+		C1470138229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1470137229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift */; };
+		C147013C229D99B2009B1EE0 /* UIFont+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147013B229D99B2009B1EE0 /* UIFont+Constant.swift */; };
+		C1470141229D9A93009B1EE0 /* UIFontBoldItalicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147013F229D9A89009B1EE0 /* UIFontBoldItalicTests.swift */; };
 		C150931F21BF2E2200D619A3 /* UIView+Negatives.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */; };
 		C150932321BF2E8B00D619A3 /* UIVIewNegativesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */; };
 		C1B090462194E57100C87B61 /* HorizontalHairline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B090452194E57100C87B61 /* HorizontalHairline.swift */; };
@@ -93,6 +96,9 @@
 		73E61C281EBE5D9E006C7A29 /* BoxOfToysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfToysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E61C3C1EBE5EB0006C7A29 /* SimpleTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTabViewController.swift; sourceTree = "<group>"; };
 		73E61C3E1EBE5ED4006C7A29 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		C1470137229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+BoldItalicSystem.swift"; sourceTree = "<group>"; };
+		C147013B229D99B2009B1EE0 /* UIFont+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Constant.swift"; sourceTree = "<group>"; };
+		C147013F229D9A89009B1EE0 /* UIFontBoldItalicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontBoldItalicTests.swift; sourceTree = "<group>"; };
 		C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Negatives.swift"; sourceTree = "<group>"; };
 		C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewNegativesTests.swift; sourceTree = "<group>"; };
 		C1B090452194E57100C87B61 /* HorizontalHairline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalHairline.swift; sourceTree = "<group>"; };
@@ -202,8 +208,9 @@
 				736DCA302028E6DB00689659 /* Application+TopPresenter.swift */,
 				738B1BD3203B1EDD001E11B4 /* UserDefaults+Color.swift */,
 				733732CD205243A200B8BA6C /* UIViewController+RootViewController.swift */,
-				73BEF5EB205C11C40091067F /* UIView+Shake.swift */,
-				C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */,
+				C1470144229DBE5A009B1EE0 /* UIBezierPath+Shapes.swift */,
+				C147013A229D998E009B1EE0 /* UIView */,
+				C1470139229D9983009B1EE0 /* UIFont */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 				738B1BD5203B1F23001E11B4 /* UserDefaultsTests.swift */,
 				733A8C60205F22450028AF3C /* ProperFractionCGFloatTests.swift */,
 				C150932021BF2E7900D619A3 /* UIVIewNegativesTests.swift */,
+				C147013F229D9A89009B1EE0 /* UIFontBoldItalicTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -266,6 +274,24 @@
 			);
 			name = Sources;
 			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		C1470139229D9983009B1EE0 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				C147013B229D99B2009B1EE0 /* UIFont+Constant.swift */,
+				C1470137229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		C147013A229D998E009B1EE0 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				73BEF5EB205C11C40091067F /* UIView+Shake.swift */,
+				C150931E21BF2E2200D619A3 /* UIView+Negatives.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		C1B090442194E55B00C87B61 /* Views */ = {
@@ -376,6 +402,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -437,6 +464,7 @@
 				738B1BD4203B1EDD001E11B4 /* UserDefaults+Color.swift in Sources */,
 				733732CE205243A200B8BA6C /* UIViewController+RootViewController.swift in Sources */,
 				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
+				C1470138229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift in Sources */,
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
 				C1E1DAE320ED66F200DA703A /* UIColor+Components.swift in Sources */,
 				73B2131D2024CD5900792C42 /* Busy.swift in Sources */,
@@ -451,6 +479,7 @@
 				733A8C5A205F0F6D0028AF3C /* ProperFraction+CGFloat.swift in Sources */,
 				738BA9411EBE7847005142A9 /* StatefulTableViewController.swift in Sources */,
 				73E61C3D1EBE5EB0006C7A29 /* SimpleTabViewController.swift in Sources */,
+				C147013C229D99B2009B1EE0 /* UIFont+Constant.swift in Sources */,
 				C1B090462194E57100C87B61 /* HorizontalHairline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +493,7 @@
 				733A8C62205F22560028AF3C /* ProperFractionCGFloatTests.swift in Sources */,
 				C150932321BF2E8B00D619A3 /* UIVIewNegativesTests.swift in Sources */,
 				736FB843202902DF0098A9BD /* UtilitiesTests.swift in Sources */,
+				C1470141229D9A93009B1EE0 /* UIFontBoldItalicTests.swift in Sources */,
 				736FB840202901330098A9BD /* Utilities.swift in Sources */,
 				73B8D39E20168C64008AED0D /* UIColor+ComponentsTests.swift in Sources */,
 			);
