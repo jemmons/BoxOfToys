@@ -268,7 +268,7 @@
 				C1470146229DD50F009B1EE0 /* UIBezierPathShapesTests.swift */,
 			);
 			name = Tests;
-			path = ../Tests;
+			path = ../Tests/BoxOfToysTests;
 			sourceTree = "<group>";
 		};
 		73E61C3B1EBE5E86006C7A29 /* Sources */ = {
@@ -283,7 +283,7 @@
 				738BA93D1EBE66EE005142A9 /* Utilities */,
 			);
 			name = Sources;
-			path = ../Sources;
+			path = ../Sources/BoxOfToys;
 			sourceTree = "<group>";
 		};
 		C1470139229D9983009B1EE0 /* UIFont */ = {
@@ -709,6 +709,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BoxOfToys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -734,6 +735,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BoxOfToys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
