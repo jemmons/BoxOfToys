@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BagOfTricks",
+        "repositoryURL": "https://github.com/jemmons/BagOfTricks.git",
+        "state": {
+          "branch": null,
+          "revision": "0071b31a148f6dee243956787e107adc73a545d5",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

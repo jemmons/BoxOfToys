@@ -35,7 +35,7 @@ public class SimpleTabViewController: UIViewController {
 
 
 public extension SimpleTabViewController {
-  public var numberOfTabs: Int {
+  var numberOfTabs: Int {
     return viewControllers.count
   }
 }

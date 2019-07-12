@@ -31,7 +31,7 @@ public protocol AbstractBusy: class {
 
 
 public extension AbstractBusy where Self: UIViewController {
-  public var isBusy: Bool {
+  var isBusy: Bool {
     get {
       return findBusyController() != nil
     }
@@ -53,7 +53,7 @@ public extension AbstractBusy where Self: UIViewController {
   }
   
   
-  public var isNotBusy: Bool {
+  var isNotBusy: Bool {
     return ❗️isBusy
   }
   

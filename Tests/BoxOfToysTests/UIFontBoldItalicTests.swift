@@ -7,12 +7,12 @@ import BoxOfToys
 class UIFontBoldItalicTests: XCTestCase {
   func testBoldItalic() {
     let subject = UIFont.boldItalicSystemFont(ofSize: 32)
-    XCTAssertEqual(".SFUIDisplay-SemiboldItalic", subject.fontName)
+    XCTAssert(subject.fontName.hasSuffix("SemiboldItalic"))
   }
 
 
   func testBlackItalic() {
     let subject = UIFont.blackItalicSystemFont(ofSize: 32)
-    XCTAssertEqual(".SFUIDisplay-BlackItalic", subject.fontName)
+    XCTAssert(subject.fontName.hasSuffix("BlackItalic"))
   }
 }
