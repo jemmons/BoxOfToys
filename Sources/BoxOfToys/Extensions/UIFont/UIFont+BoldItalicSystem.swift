@@ -9,7 +9,7 @@ internal extension UIFont.Constant {
   
   
   static let blackItalicDescriptor: UIFontDescriptor? = {
-    return UIFont.systemFont(ofSize: 12, weight: .black).fontDescriptor.withSymbolicTraits([.traitItalic])
+    return UIFont.systemFont(ofSize: 12, weight: .black).fontDescriptor.withSymbolicTraits([.traitItalic, .traitBold])
   }()
 }
 
