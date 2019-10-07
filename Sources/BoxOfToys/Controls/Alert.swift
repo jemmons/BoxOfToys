@@ -25,4 +25,9 @@ public extension Alert {
     actions.forEach { alert.addAction($0) }
     presenter.present(alert, animated: true, completion: nil)
   }
+  
+  
+  static func present(error: Error) {
+    present(title: (error as NSError).localizedFailureReason, message: (error as NSError).localizedDescription)
+  }
 }
