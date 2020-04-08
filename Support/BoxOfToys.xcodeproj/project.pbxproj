@@ -24,12 +24,9 @@
 		738BA9461EBE7D37005142A9 /* EmptyTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9431EBE7D37005142A9 /* EmptyTableView.xib */; };
 		738BA9471EBE7D37005142A9 /* LoadingTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9441EBE7D37005142A9 /* LoadingTableView.xib */; };
 		738BA9481EBE7D37005142A9 /* ErrorTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738BA9451EBE7D37005142A9 /* ErrorTableView.xib */; };
-		73B213182024C73300792C42 /* AbstractBusy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213172024C73300792C42 /* AbstractBusy.swift */; };
 		73B2131B2024CD1E00792C42 /* BusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131A2024CD1E00792C42 /* BusyViewController.swift */; };
 		73B2131D2024CD5900792C42 /* Busy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131C2024CD5800792C42 /* Busy.swift */; };
 		73B2131F2024CDA300792C42 /* BlurBusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */; };
-		73B213212024D00800792C42 /* DarkBlurBusyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */; };
-		73B213232024D30A00792C42 /* DarkBusy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B213222024D30A00792C42 /* DarkBusy.swift */; };
 		73B8D39E20168C64008AED0D /* UIColor+ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8D39C20168C57008AED0D /* UIColor+ComponentsTests.swift */; };
 		73B8D3A120168D20008AED0D /* BagOfTricks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8D3A020168D20008AED0D /* BagOfTricks.framework */; };
 		73BEF5EC205C11C40091067F /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEF5EB205C11C40091067F /* UIView+Shake.swift */; };
@@ -87,12 +84,9 @@
 		738BA9431EBE7D37005142A9 /* EmptyTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableView.xib; sourceTree = "<group>"; };
 		738BA9441EBE7D37005142A9 /* LoadingTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableView.xib; sourceTree = "<group>"; };
 		738BA9451EBE7D37005142A9 /* ErrorTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorTableView.xib; sourceTree = "<group>"; };
-		73B213172024C73300792C42 /* AbstractBusy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractBusy.swift; sourceTree = "<group>"; };
 		73B2131A2024CD1E00792C42 /* BusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyViewController.swift; sourceTree = "<group>"; };
 		73B2131C2024CD5800792C42 /* Busy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Busy.swift; sourceTree = "<group>"; };
 		73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurBusyViewController.swift; sourceTree = "<group>"; };
-		73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBlurBusyViewController.swift; sourceTree = "<group>"; };
-		73B213222024D30A00792C42 /* DarkBusy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBusy.swift; sourceTree = "<group>"; };
 		73B8D39C20168C57008AED0D /* UIColor+ComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ComponentsTests.swift"; sourceTree = "<group>"; };
 		73B8D3A020168D20008AED0D /* BagOfTricks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BagOfTricks.framework; path = ../Carthage/Build/iOS/BagOfTricks.framework; sourceTree = "<group>"; };
 		73BEF5EB205C11C40091067F /* UIView+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
@@ -179,12 +173,9 @@
 		73B213192024CCCE00792C42 /* Busy */ = {
 			isa = PBXGroup;
 			children = (
-				73B213172024C73300792C42 /* AbstractBusy.swift */,
 				73B2131C2024CD5800792C42 /* Busy.swift */,
-				73B213222024D30A00792C42 /* DarkBusy.swift */,
 				73B2131A2024CD1E00792C42 /* BusyViewController.swift */,
 				73B2131E2024CDA300792C42 /* BlurBusyViewController.swift */,
-				73B213202024D00800792C42 /* DarkBlurBusyViewController.swift */,
 			);
 			path = Busy;
 			sourceTree = "<group>";
@@ -475,17 +466,14 @@
 				738B1BD4203B1EDD001E11B4 /* UserDefaults+Color.swift in Sources */,
 				C1470145229DBE5A009B1EE0 /* UIBezierPath+Shapes.swift in Sources */,
 				733732CE205243A200B8BA6C /* UIViewController+RootViewController.swift in Sources */,
-				73B213182024C73300792C42 /* AbstractBusy.swift in Sources */,
 				C1470138229D9877009B1EE0 /* UIFont+BoldItalicSystem.swift in Sources */,
 				738BA93F1EBE670C005142A9 /* Containment.swift in Sources */,
 				C1E1DAE320ED66F200DA703A /* UIColor+Components.swift in Sources */,
 				73B2131D2024CD5900792C42 /* Busy.swift in Sources */,
 				C147013E229D99E3009B1EE0 /* UIFont+CapHeight.swift in Sources */,
 				7364C75820474E8D00038931 /* Alert.swift in Sources */,
-				73B213212024D00800792C42 /* DarkBlurBusyViewController.swift in Sources */,
 				73B2131F2024CDA300792C42 /* BlurBusyViewController.swift in Sources */,
 				736DCA312028E6DB00689659 /* Application+TopPresenter.swift in Sources */,
-				73B213232024D30A00792C42 /* DarkBusy.swift in Sources */,
 				C1B0904A2194ECF600C87B61 /* Popoverify.swift in Sources */,
 				73B2131B2024CD1E00792C42 /* BusyViewController.swift in Sources */,
 				C150931F21BF2E2200D619A3 /* UIView+Negatives.swift in Sources */,
