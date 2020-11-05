@@ -3,6 +3,7 @@ import BagOfTricks
 
 
 public class SimpleTabViewController: UIViewController {
+  public var animated = true
   private let viewControllers: [UIViewController]
   private let usesLayoutGuide: Bool
   private var selectedConstraints: [NSLayoutConstraint] = []
@@ -10,10 +11,10 @@ public class SimpleTabViewController: UIViewController {
   
   public var selectedIndex: Int {
     willSet {
-      removeControllers()
+      unselectAllControllers()
     }
     didSet {
-      addSelectedController()
+      selectController(viewControllers[selectedIndex])
     }
   }
   
@@ -43,7 +44,7 @@ public extension SimpleTabViewController {
 
 
 private extension SimpleTabViewController {
-  func removeControllers() {
+  func unselectAllControllers() {
     NSLayoutConstraint.deactivate(selectedConstraints)
     selectedConstraints = []
     children.forEach { viewController in
@@ -52,7 +53,7 @@ private extension SimpleTabViewController {
   }
   
   
-  func addSelectedController() {
-    selectedConstraints.append(contentsOf: embedFullFrame(viewControllers[selectedIndex], usesLayoutGuide: usesLayoutGuide))
+  func selectController(_ vc: UIViewController) {
+    selectedConstraints.append(contentsOf: embedFullFrame(vc, usesLayoutGuide: usesLayoutGuide))
   }
 }

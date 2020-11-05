@@ -23,9 +23,7 @@ public extension StatefulTableViewController {
       return state
     }
     set {
-      let newIndex = newValue.rawValue
-      assert(newIndex >= 0 && newIndex < tabController.numberOfTabs)
-      tabController.selectedIndex = newValue.rawValue
+      tabController.selectedIndex = newValue.rawValue.clamp(to: 0...(tabController.numberOfTabs - 1))
     }
   }
   
