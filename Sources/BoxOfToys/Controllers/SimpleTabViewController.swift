@@ -2,7 +2,7 @@ import UIKit
 import BagOfTricks
 
 
-public class SimpleTabViewController: UIViewController {
+open class SimpleTabViewController: UIViewController {
   public var animated = true
   private let viewControllers: [UIViewController]
   private let usesLayoutGuide: Bool
